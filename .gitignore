@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.venv/
+Rplots.pdf
+
+# tests
+tests/result_images/
+.pytest_cache/
+.ruff_cache/
+demo/tour_output/
+
+# notebooks and OS files
+__marimo__/
+.ipynb_checkpoints/
+.DS_Store
+
+# scratch output from trying the package
+/halfeye.png
+/quantile_dots.png

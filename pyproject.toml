@@ -1,0 +1,36 @@
+[project]
+name = "plotnine-ggdist"
+version = "0.1.0"
+description = "Distribution and uncertainty visualization for plotnine: an independent Python implementation of R's ggdist"
+readme = "README.md"
+authors = [
+    { name = "Shannon E. Ellis" }
+]
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["plotnine", "ggplot", "ggdist", "uncertainty", "distributions", "visualization", "bayesian"]
+classifiers = [
+    "Framework :: Matplotlib",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "plotnine>=0.15",
+    "scipy>=1.11",
+]
+
+[project.urls]
+Repository = "https://github.com/snake-case-ggtext/plotnine-ggdist"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
